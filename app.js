@@ -1,15 +1,18 @@
 // Selectors 
-const todoInput = document.querySelector('.todo-input');
-const todoButton = document.querySelector('.todo-button');
-const todoList = document.querySelector('.todo-list');
+const todoInput = document.querySelector(".todo-input");
+const todoButton = document.querySelector(".todo-button");
+const todoList = document.querySelector(".todo-list");
 
 // Event Listeners
 todoButton.addEventListener('click', addTodo);
+
+
 
 // Functions
 function addTodo(event) {
     // prevent form from submiting
     event.preventDefault();
+    
 
     // Todo DIV
     const todoDiv = document.createElement('div');
@@ -30,9 +33,11 @@ function addTodo(event) {
 
     // trash button
     const trashButton = document.createElement('button');
-    trashButton.innerHTML = '<i class="fas fa-check"></i>';
+    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
-
+    
+    // append to list
+    todoList.appendChild(todoDiv);
 }
