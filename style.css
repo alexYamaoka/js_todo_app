@@ -75,3 +75,11 @@ form button:hover{
     font-size: 1rem;
 }
 
+.complete-btn {
+    background: green;
+}
+
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
