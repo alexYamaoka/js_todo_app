@@ -110,13 +110,13 @@ function filterTodo(event) {
 function saveLocalTodos(todo) {
     // check if anything is stored already
     let todos;
-    if (localStorage.getItem('todos') === null) {
+    if (localStorage.getItem("todos") === null) {
         todos = [];
     }
     else {
-        todos.JSON.parse(localStorage.getItem('todos'));
+        todos = JSON.parse(localStorage.getItem("todos"));
     }
 
     todos.push(todo);
-    localStorage.setItem('todos', JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
