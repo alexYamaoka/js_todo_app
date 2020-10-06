@@ -2,12 +2,13 @@
 Todo web application created using javascript, html, and css.
 
 Implements:
-- create and delete list
-- save list to local storage 
-- transitions for visual effect when deleting 
-- javascript
-- html
-- css
+- Create and delete list
+- Save list to local storage
+- Switch between all items, completed items, or uncompleted items
+- Transitions for visual effect when deleting
+- Javascript
+- Html
+- Css
 
 ## Add Item
 ![Add Item](https://github.com/alexYamaoka/js_todo_app/blob/master/gifs/add.gif)
