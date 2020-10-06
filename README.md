@@ -2,9 +2,9 @@
 Todo web application created using javascript, html, and css.
 
 Implements:
-- Create and delete list
-- Save list to local storage
-- Switch between all items, completed items, or uncompleted items
+- Add a todo
+- Save current list state to local storage
+- Select between all, completed, or uncompleted todos to be shown
 - Transitions for visual effect when deleting
 - Javascript
 - Html
