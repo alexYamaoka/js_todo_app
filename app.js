@@ -75,7 +75,6 @@ function filterTodo(event) {
     const todos = todoList.childNodes;
 
     todos.forEach(function(todo) {
-        
         switch (event.target.value) {
             case "all":
                 todo.style.display = "flex";
@@ -90,9 +89,12 @@ function filterTodo(event) {
                 }
                 break;
             
+                case "uncompleted":
+                    
+                    break;
+            
             default:
                 console.log(event.target.value);
         }
     });
-
 }

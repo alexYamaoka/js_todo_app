@@ -120,8 +120,6 @@ select {
     padding: 1rem;
 }
 
-
-
 .select::after {
     content: "\25BC";
     pointer-events: none;
