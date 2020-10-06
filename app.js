@@ -89,9 +89,14 @@ function filterTodo(event) {
                 }
                 break;
             
-                case "uncompleted":
-                    
-                    break;
+            case "uncompleted":
+                if (!todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                }
+                else {
+                    todo.style.display = "none";
+                }
+                break;
             
             default:
                 console.log(event.target.value);
